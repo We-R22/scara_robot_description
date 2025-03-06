@@ -1,0 +1,28 @@
+{
+    "trajectories": {
+        "path": "/home/jacob/ws/src/scara_robot_description/trajectories/jd.csv",
+        "column_names": ["q1", "q2", "q3"],
+        "floating_base_path": "/home/jacob/ws/src/scara_robot_description/trajectories/md.csv",
+        "fb_column_names": ["X", "Y", "Z"]
+    },
+    "command_paths": [
+        "/scara/j1_position_controller/command",
+        "/scara/j2_position_controller/command",
+        "/scara/j3_position_controller/command" 
+    ],
+    "state_paths": [
+        "/scara/j1_position_controller/state",
+        "/scara/j2_position_controller/state",
+        "/scara/j3_position_controller/state"
+    ],
+    "client_paths": [
+        "/scara/j1_position_controller/pid",
+        "/scara/j2_position_controller/pid",
+        "/scara/j3_position_controller/pid"
+    ],
+    "pid_bounds": {
+        "p":[0, 1000],
+        "i":[0, 20],
+        "d":[0, 10]
+    }
+}
